@@ -1,0 +1,156 @@
+lang mapper
+
+TODO LIST:
+TRANSLATE FUNCTIONALITY
+	[X] html shell site with barebones what it will be
+		[X] add different pages for different maps with flask redirect framework
+			[X] africa page
+			[X] europe page
+			[X] india page 
+			[X] asia page
+			[X] world page
+		[X] write getter for button information that triggers translate function
+			[X] call translate on a web api or something and print it out
+PROJECTION FUNCTIONALITY
+		[X] look into translation engine + datastructure + alg to process word to translate
+		[X] stub it as a <p> then ...
+		[X] project the languages on map + figure out CSS for page.
+LANGUAGE SIMILARITY FUNCTIONALITY 
+	[] language similarity algorithm hylighter
+		algorithm:
+			goes through all pairings projected on map
+			finds all potential pairings with a table lookup
+			highlights all table
+		how will the language algorithm work
+VISUAL UI 
+	[] center items and make it look nice
+MISC
+	[] find out which langs map where
+*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+what: a simple website that displays a map showing translations into every language
+
+how:
+...
+	site that displays
+	code that does the translation + projection
+
+*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+NOTES SECTION:
+
+FLASK Framework notes,
+WSGI web application framework ie can handle web server gateway requests and ...
+
+to start flask we go
+python3 -m venv .venv
+
+then source the enviroment 
+. .venv/bin/activate
+
+start command for server is 
+flask --app my_app.py run
+
+virtual enviroments in python,
+	-> manages dependencies for your project in development and production
+	-> allows for unique libraries per project, ensuring each project
+	-> independent groups of python libraries, venv 
+we use flask in a virtual enviroment that is project specific
+
+*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Languages Specifications:
+
+these languages will show up on the maps
+
+world:
+	all languages
+
+	*Maori
+	*Quechua
+europe:
+	Albanian
+	Basque
+	Bulgarian
+	Catalan
+	Croatian
+	Czech
+	Danish
+	Dutch
+	English
+	Estonian
+	Finnish
+	French
+	German
+	Greek
+	Hungarian
+	Icelandic
+	Irish
+	Italian
+	Latin
+	Latvian
+	Lithuanian
+	Macedonian
+	Maltese
+	Norwegian
+	Polish
+	Portuguese
+	Romanian
+	Russian
+	Serbian
+	Slovak
+	Slovenian
+	Spanish
+	Swedish
+	Tatar
+	Ukrainian
+	Welsh
+asia:
+	Arabic
+	Armenian
+	Bengali
+	Cambodian
+	Chinese
+	Chinese (Mandarin)
+	Fiji
+	Georgian
+	Gujarati
+	Hindi
+	Indonesian
+	Japanese
+	Javanese
+	Korean
+	Malay
+	Malayalam
+	Marathi
+	Mongolian
+	Nepali
+	Persian
+	Punjabi
+	Samoan
+	Tamil
+	Telugu
+	Thai
+	Tibetan
+	Tonga
+	Turkish
+	Urdu
+	Uzbek
+	Vietnamese
+india:
+	Bengali
+	Chinese
+	Chinese (Mandarin)
+	Gujarati
+	Hindi
+	Malayalam
+	Marathi
+	Nepali
+	Persian
+	Punjabi
+	Tamil
+	Telugu
+	Tibetan
+	Urdu
+africa:
+	Afrikaans
+	Arabic
+	Swahili
+	Xhosa

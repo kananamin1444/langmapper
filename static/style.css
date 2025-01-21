@@ -1,0 +1,16 @@
+
+.containerWorld{
+	position: relative;
+}
+
+#worldmap {
+	width:100%;
+	height:100% ;
+
+}
+
+#AF{
+	position:absolute;
+	color:  RED;
+	font-size: 100px;
+}

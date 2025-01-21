@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+	<div class="containerWorld">
+		<img src="{{ url_for('static',filename='img/worldmap.jpg')}}" id="worldmap"/>
+
+		<ul>
+			<li> start here </li>
+			{% for langItem, langPhrase in data.items() %}
+				<p id='{{langItem}}'> {{langPhrase}} </p>
+			{% endfor %}{{ langItem }} : 
+		</ul>
+
+	</div>
+
+{% endblock %}
